@@ -22,7 +22,7 @@ namespace AutoFacContainer.Entities
             logObject.Log("Started logging process.");
             dataAccessModel.AccessData("Started Connection.");
 
-            Console.WriteLine("business logic implemented.");
+            Console.WriteLine("Business logic implemented.");
 
             dataAccessModel.AccessData("Ended Connection.");
             logObject.Log("Ended logging process.");
