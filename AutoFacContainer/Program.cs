@@ -11,10 +11,14 @@ namespace AutoFacContainer
     {
         static void Main(string[] args)
         {
-            BusinessLogic businessLogicObj = new BusinessLogic();
-            businessLogicObj.ProcessData();
+            //BusinessLogic businessLogicObj = new BusinessLogic();
+            //businessLogicObj.ProcessData();
 
-            Console.ReadKey();
+            //Console.ReadKey();
+
+            //Since we are using Atofac container, so above is commented.
+
+
         }
     }
 }
