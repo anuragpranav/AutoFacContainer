@@ -12,7 +12,7 @@ namespace AutoFacContainer.Entities
         ILoggerModel _logObject;
         IDataAccessModel _dataAccessModel;
 
-        public BusinessLogic(ILoggerModel logObject, DataAccessModel dataAccessModel)
+        public BusinessLogic(ILoggerModel logObject, IDataAccessModel dataAccessModel)
         {
             _logObject = logObject;
             _dataAccessModel = dataAccessModel;
