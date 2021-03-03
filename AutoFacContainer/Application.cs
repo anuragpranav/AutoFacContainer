@@ -1,4 +1,4 @@
-﻿using DataAccessEntities;
+﻿using AutoFacContainer.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AutoFacContainer
 {
-    public class Application
+    public class Application : IApplication
     {
         IBusinessLogic _businessLogicObj;
         public Application(IBusinessLogic businessLogicObj)
