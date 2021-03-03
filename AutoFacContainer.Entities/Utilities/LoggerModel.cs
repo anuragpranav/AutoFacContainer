@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace AutoFacContainer.Entities.Utilities
 {
-    class LoggerModel
+    public class LoggerModel : ILoggerModel
     {
         public void Log(string message)
         {
-            Console.WriteLine("Logging : "+ message);
+            Console.WriteLine("Logging : " + message);
         }
     }
 }

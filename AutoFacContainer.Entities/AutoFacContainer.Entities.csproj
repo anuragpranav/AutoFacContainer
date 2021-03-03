@@ -42,7 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogic.cs" />
+    <Compile Include="IBusinessLogic.cs" />
     <Compile Include="Utilities\DataAccessModel.cs" />
+    <Compile Include="Utilities\IDataAccessModel.cs" />
+    <Compile Include="Utilities\ILoggerModel.cs" />
     <Compile Include="Utilities\LoggerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

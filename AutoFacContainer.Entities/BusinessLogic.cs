@@ -7,25 +7,26 @@ using System.Threading.Tasks;
 
 namespace AutoFacContainer.Entities
 {
-    public class BusinessLogic
+    public class BusinessLogic : IBusinessLogic
     {
-        LoggerModel logObject = new LoggerModel();
-        DataAccessModel dataAccessModel = new DataAccessModel();
+        ILoggerModel _logObject;
+        IDataAccessModel _dataAccessModel;
 
-        public BusinessLogic()
+        public BusinessLogic(ILoggerModel logObject, DataAccessModel dataAccessModel)
         {
-          
+            _logObject = logObject;
+            _dataAccessModel = dataAccessModel;
         }
 
         public void ProcessData()
         {
-            logObject.Log("Started logging process.");
-            dataAccessModel.AccessData("Started Connection.");
+            _logObject.Log("Started logging process.");
+            _dataAccessModel.AccessData("Started Connection.");
 
             Console.WriteLine("Business logic implemented.");
 
-            dataAccessModel.AccessData("Ended Connection.");
-            logObject.Log("Ended logging process.");
+            _dataAccessModel.AccessData("Ended Connection.");
+            _logObject.Log("Ended logging process.");
         }
     }
 }

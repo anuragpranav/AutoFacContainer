@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace AutoFacContainer.Entities.Utilities
 {
-    public class DataAccessModel
+    public class DataAccessModel : IDataAccessModel
     {
         public void AccessData(string request)
         {
-            Console.WriteLine("Access : "+request);
+            Console.WriteLine("Access : " + request);
         }
     }
 }
